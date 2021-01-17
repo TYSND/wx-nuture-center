@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/addBed/addBed",
     "pages/index/index",
     "pages/aboutUs/aboutUs",
-    
+    "pages/addBed/addBed",
     "pages/bedList/bedList"
   ],
   "window": {

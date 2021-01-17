@@ -15,6 +15,11 @@ Page({
       url: '../bedList/bedList'
     })
   },
+  goAboutUs: function() {
+    wx.navigateTo({
+      url: '../../pages/aboutUs/aboutUs',
+    })
+  },
   onLoad() {
     if (app.globalData.userInfo) {
       this.setData({

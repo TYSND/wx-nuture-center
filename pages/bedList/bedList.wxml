@@ -1,7 +1,7 @@
 <!--pages/bedList/bedList.wxml-->
 <view class="container">
   <view class="logo">
-    <image src="../../static/images/logo.png" mode="widthFix"></image>
+    <image src="../../static/images/logo.png" mode="widthFix" bindtap="goIndex"></image>
   </view>
   <view class="table">
     <view class="tr bg-w">

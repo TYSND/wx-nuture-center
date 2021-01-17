@@ -4,7 +4,12 @@
     <image src="../../static/images/logo.png" mode="widthFix"></image>
   </view>
   <view class="desc">
-    介绍介绍介绍介绍介绍介绍介绍
+    介绍介绍介绍介绍介绍介绍介绍。
+    写一个按钮或链接，点击跳转到aboutUs
+    <view class="about-us" bindtap="goAboutUs">
+      关于我们
+    </view>
+    
   </view>
   <view class="enter-btn">
     <button type="primary" bindtap="enter">进入</button>
