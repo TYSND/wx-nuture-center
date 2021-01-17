@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/addBed/addBed",
+    "pages/index/index",
+    "pages/aboutUs/aboutUs",
+    
+    "pages/bedList/bedList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+}

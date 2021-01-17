@@ -1,0 +1,15 @@
+/**index.wxss**/
+.container {
+}
+.logo {
+  width: 100%;
+  /* height: 200rpx; */
+}
+.logo image {
+  width: 100%;
+}
+.desc {
+  min-height: 50%;
+  border: 1px solid red;
+  padding: 50rpx 0;
+}

@@ -1,0 +1,28 @@
+<!--pages/bedList/bedList.wxml-->
+<view class="container">
+  <view class="logo">
+    <image src="../../static/images/logo.png" mode="widthFix"></image>
+  </view>
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">房间号</view>
+    <view class="th">房间号</view>
+    <view class="th ">床位状态</view>
+    </view>
+    <block wx:for="{{bedList}}" wx:key="{[code]}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td">{{item.roomNumber}}</view>
+        <view class="td">{{item.id}}</view>
+        <view class="td">{{item.bedStatus ? '已入住' : '空闲'}}</view>
+      </view>
+      <view class="tr" wx:else>
+        <view class="td">{{item.roomNumber}}</view>
+        <view class="td">{{item.id}}</view>
+        <view class="td">{{item.bedStatus ? '已入住' : '空闲'}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="add-btn" bindtap="addBed">
+    <image src="../../static/images/add.png" mode="scaleToFill"></image>
+  </view>
+</view>

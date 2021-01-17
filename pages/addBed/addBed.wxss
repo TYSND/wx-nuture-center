@@ -1,0 +1,11 @@
+/* pages/addBed/addBed.wxss */
+.bed-id {
+  /* width: 90%; */
+  /* border-left: 1px solid ; */
+}
+.btns {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}

@@ -1,0 +1,15 @@
+<!--pages/addBed/addBed.wxml-->
+<view class="container">
+  <view class="bed-id">
+    <view class="weui-cells__title">房间编号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="number" placeholder="请输入房间编号" value="{{roomID}}" bindinput="changeID"/>
+      </view>
+    </view>
+  </view>
+  <view class="btns">
+    <button type="primary" bindtap="submit">提交</button>
+    <button type="" bindtap="cancel">取消</button>
+  </view>
+</view>

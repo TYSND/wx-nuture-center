@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="logo">
+    <image src="../../static/images/logo.png" mode="widthFix"></image>
+  </view>
+  <view class="desc">
+    介绍介绍介绍介绍介绍介绍介绍
+  </view>
+  <view class="enter-btn">
+    <button type="primary" bindtap="enter">进入</button>
+  </view>
+</view>
