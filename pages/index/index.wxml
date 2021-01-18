@@ -2,7 +2,7 @@
 <view class="logo">
     <image src="../../static/images/logo.png" mode="widthFix"></image>
 </view>
-<view>
+<view class="main">
   <view class="banner">
     <swiper indicator-dots="true"
         autoplay="true" interval="2000" duration="1000">
@@ -46,10 +46,12 @@
     </view>
   </view>
 </view>
-<view class="enter-btn">
+<view class="footer">
+  <view class="enter-btn">
     <button type="primary" bindtap="enter">进入</button>
-</view>
-<view class="about-us" bindtap="goAboutUs">
-      关于我们
+  </view>
+  <view class="about-us" bindtap="goAboutUs">
+        关于我们
+  </view>
 </view>
 
