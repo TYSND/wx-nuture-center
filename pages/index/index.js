@@ -4,6 +4,27 @@ const app = getApp()
 
 Page({
   data: {
+    banner: [
+       "../images/yyy1.jpeg",
+       "../images/yyy2.jpeg",
+       "../images/yyy3.jpg"
+     ],
+     intro: [
+       "显示详情",
+       "点击隐藏"
+     ],
+     intro_id: 0,
+     serve: [
+       "服务列表",
+       "点击收起"
+     ],
+     serve_id: 0,
+     foodData: [
+      {path: "../images/food1.jpeg",detail:"早餐"},
+      {path: "../images/food2.jpg",detail:"午餐"},
+      {path: "../images/food3.jpg",detail:"晚餐"},
+      {path: "../images/food4.jpeg",detail:"豪华套餐"}
+     ],
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
