@@ -41,6 +41,28 @@ Page({
       url: '../../pages/aboutUs/aboutUs',
     })
   },
+  detail_intro: function () {
+    if (this.data.intro_id === 0) {
+      this.setData({
+        intro_id: 1
+      })
+    } else {
+      this.setData({
+        intro_id: 0
+      })
+    }
+  },
+  detail_serve: function () {
+    if (this.data.serve_id === 0) {
+      this.setData({
+        serve_id: 1
+      })
+    } else {
+      this.setData({
+        serve_id: 0
+      })
+    }
+  },
   onLoad() {
     if (app.globalData.userInfo) {
       this.setData({
