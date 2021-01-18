@@ -13,6 +13,9 @@
   border: 1px solid red;
   padding: 50rpx 0;
 }
+.about-us {
+  text-align: center;
+}
 .banner {
   border-bottom: 4px solid rgb(175, 171, 171);
 }
