@@ -5,9 +5,9 @@ const app = getApp()
 Page({
   data: {
     banner: [
-       "../images/yyy1.jpeg",
-       "../images/yyy2.jpeg",
-       "../images/yyy3.jpg"
+       "../static/images/yyy1.jpeg",
+       "../static/images/yyy2.jpeg",
+       "../static/images/yyy3.jpg"
      ],
      intro: [
        "显示详情",
@@ -20,10 +20,10 @@ Page({
      ],
      serve_id: 0,
      foodData: [
-      {path: "../images/food1.jpeg",detail:"早餐"},
-      {path: "../images/food2.jpg",detail:"午餐"},
-      {path: "../images/food3.jpg",detail:"晚餐"},
-      {path: "../images/food4.jpeg",detail:"豪华套餐"}
+      {path: "../static/images/food1.jpeg",detail:"早餐"},
+      {path: "../static/images/food2.jpg",detail:"午餐"},
+      {path: "../static/images/food3.jpg",detail:"晚餐"},
+      {path: "../static/images/food4.jpeg",detail:"豪华套餐"}
      ],
     motto: 'Hello World',
     userInfo: {},
