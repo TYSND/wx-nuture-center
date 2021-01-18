@@ -1,17 +1,55 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="logo">
+<!--首页-->
+<view class="logo">
     <image src="../../static/images/logo.png" mode="widthFix"></image>
+</view>
+<view>
+  <view class="banner">
+    <swiper indicator-dots="true"
+        autoplay="true" interval="2000" duration="1000">
+         <block wx:for="{{banner}}" wx:key="*this">
+            <swiper-item>
+              <image class="swiper-img" src="{{item}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
   </view>
-  <view class="desc">
-    介绍介绍介绍介绍介绍介绍介绍。
-    写一个按钮或链接，点击跳转到aboutUs
-    <view class="about-us" bindtap="goAboutUs">
-      关于我们
+  <view class="content">
+     <view class="header">
+      <text class="title">颐养院概况</text>
+      <button class="btn" bindtap="detail_intro">{{intro[intro_id]}}</button>
+     </view>
+  </view>
+  <view class="content" wx:if="{{intro_id == 1}}">
+    <view class="txt">开发框架：Spring+SpringMVC+MyBatis</view>
+    <view class="txt">前端：微信小程序</view>
+    <view class="txt">数据库：MySQL</view>
+    <view class="txt">设计人：田易、刘芃杰、李广、钱荣涛</view>
+  </view>
+  <view class="content">
+    <view class="header">
+      <text class="title">服务推荐</text>
+      <button class="btn" bindtap="detail_serve">{{serve[serve_id]}}</button>
     </view>
-    
   </view>
-  <view class="enter-btn">
-    <button type="primary" bindtap="enter">进入</button>
+  <view class="content" wx:if="{{serve_id == 1}}">
+    <view class="item-all">
+      <block wx:for="{{foodData}}" wx:key="*this">
+        <view class="item">
+          <view>
+            <image src="{{item.path}}"></image>
+          </view>
+          <view class="price">
+            <text>{{item.detail}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
   </view>
 </view>
+<view class="enter-btn">
+    <button type="primary" bindtap="enter">进入</button>
+</view>
+<view class="about-us" bindtap="goAboutUs">
+      关于我们
+</view>
+
