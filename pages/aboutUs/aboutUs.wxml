@@ -1,2 +1,31 @@
 <!--pages/aboutUs/aboutUs.wxml-->
-<text>pages/aboutUs/aboutUs.wxml</text>
+<view class="container">
+  <view class="logo-bg">
+    <image class="logo-image" src="../../static/images/logo-bg.jpg" mode="scaleToFill"></image>
+  </view>
+  <view class="desc">
+    <view class="title">优质服务，家人放心</view>
+    <view class="content">
+      <view class="row">
+        <view class="label-image">
+          <image src="../../static/images/team.png" mode="aspectFit"></image>
+        </view>
+        <view class="row-desc">我们有专业的团队和护工，确保老人享受安全舒适的生活</view>
+      </view>
+
+      <view class="row">
+        <view class="label-image">
+          <image src="../../static/images/house.png" mode="aspectFit"></image>
+        </view>
+        <view class="row-desc">我们的公寓整洁舒适，有专门人员定时打扫，给老人一个情节的环境</view>
+      </view>
+
+      <view class="row">
+        <view class="label-image">
+          <image src="../../static/images/active.png" mode="aspectFit"></image>
+        </view>
+        <view class="row-desc">我们组织了丰富的活动，让老人的生活不再枯燥</view>
+      </view>
+    </view>
+  </view>
+</view>
